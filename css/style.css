@@ -6,10 +6,10 @@
   line-height: 1.5;
 }
 :root {
-  --color1: #fff;
-  --Color2: #f17c0e;
-  --Background-color1: #000;
-  --Background-color2: #f17c0e;
+  --colorOne: #fff;
+  --colorTwe: #f17c0e;
+  --Background-colorOne: #000;
+  --Background-colorTwe: #f17c0e;
 }
 .container {
   padding-left: 15px;
@@ -38,7 +38,6 @@
 /* Start Header */
 header {
   width: 100%;
-  padding: 10px 0px;
   /* position: fixed; */
   position: absolute;
 
@@ -59,14 +58,14 @@ header .container form input {
   padding: 5px;
   background-color: rgb(85 85 85 / 20%);
   border: none;
-  color: var(--color1);
+  color: var(--colorOne);
 }
 header .container form a {
   color: #ffffffb3;
   transition: 0.6s;
 }
 header .container form a:hover {
-  color: var(--color1);
+  color: var(--colorOne);
 }
 header .container nav ul {
   display: none;
@@ -74,11 +73,11 @@ header .container nav ul {
   transition: 0.6s;
 }
 header .container nav .list {
-  color: var(--color1);
+  color: var(--colorOne);
   transition: 0.6s;
 }
 header .container nav ul li a {
-  color: var(--color1);
+  color: var(--colorOne);
   text-decoration: none;
   width: 100%;
   display: inline-block;
@@ -89,13 +88,14 @@ header .container nav .list:hover + ul {
   top: 101%;
   left: 0;
   flex-direction: column;
-  background-color: var(--Background-color1);
+  background-color: var(--Background-colorOne);
   width: 50%;
   gap: 15px;
   padding-top: 20%;
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 103vh;
+  z-index: 10000000000;
 }
 header .container nav ul li {
   width: 100%;
@@ -131,7 +131,7 @@ header .container nav ul li:hover {
   width: 70%;
 }
 .BoxImg .container .double {
-  color: var(--Color2);
+  color: var(--colorTwe);
   font-size: 50px;
 }
 @media (max-width: 767px) {
@@ -146,7 +146,7 @@ header .container nav ul li:hover {
 /* End BoxImg */
 /* Start Insurance*/
 .Insurance {
-  background-color: var(--Background-color1);
+  background-color: var(--Background-colorOne);
 }
 .Insurance .container {
   color: #fff;
@@ -183,7 +183,7 @@ header .container nav ul li:hover {
 .Insurance .container .InsuranceBoxFather .InsuranceBoxSon .TextImg {
   width: 70px;
   height: 70px;
-  background-color: var(--Background-color2);
+  background-color: var(--Background-colorTwe);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -211,7 +211,7 @@ header .container nav ul li:hover {
   font-weight: 100;
 }
 .Insurance .container .InsuranceBoxFather .InsuranceBoxSon a {
-  color: var(--Color2);
+  color: var(--colorTwe);
   text-decoration: none;
   padding: 10px 20px;
   border: 2px solid #f17c0e;
@@ -219,8 +219,8 @@ header .container nav ul li:hover {
   transition: 0.6s;
 }
 .Insurance .container .InsuranceBoxFather .InsuranceBoxSon a:hover {
-  background-color: var(--Background-color2);
-  color: var(--color1);
+  background-color: var(--Background-colorTwe);
+  color: var(--colorOne);
 }
 @media (max-width: 767px) {
   .Insurance .container .InsuranceText {
@@ -230,10 +230,10 @@ header .container nav ul li:hover {
 /* End Insurance */
 /* Start Who Are We */
 .WhoAreWe {
-  background-color: var(--Background-color1);
+  background-color: var(--Background-colorOne);
 }
 .WhoAreWe .container {
-  color: var(--color1);
+  color: var(--colorOne);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,7 +254,7 @@ header .container nav ul li:hover {
 }
 .WhoAreWe .container .WhoAreWeTextTwo {
   width: 80%;
-  background-color: var(--Background-color2);
+  background-color: var(--Background-colorTwe);
   padding: 100px 50px 35px 50px;
   display: flex;
   flex-direction: column;
@@ -275,7 +275,7 @@ header .container nav ul li:hover {
 /* End Who Are We */
 /* Start BoxThreeImg */
 .BoxThreeImg {
-  background-color: var(--Background-color1);
+  background-color: var(--Background-colorOne);
   padding-bottom: 70px;
 }
 .BoxThreeImg .container .BoxThreeImgOne {
@@ -288,7 +288,7 @@ header .container nav ul li:hover {
   height: 250px;
 }
 .BoxThreeImg .container .BoxThreeImgTwo {
-  color: var(--color1);
+  color: var(--colorOne);
   padding: 50px;
 }
 .BoxThreeImg .container .BoxThreeImgTwo h1 {
@@ -302,7 +302,7 @@ header .container nav ul li:hover {
   justify-content: flex-end;
 }
 .BoxThreeImg .container .BoxThreeImgTwo h2 span {
-  color: var(--Color2);
+  color: var(--colorTwe);
 }
 @media (max-width: 767px) {
   .BoxThreeImg .container .BoxThreeImgOne {
@@ -323,10 +323,10 @@ header .container nav ul li:hover {
 /* End BoxThreeImg */
 /* Start Companies */
 .Companies {
-  background-color: var(--Background-color1);
+  background-color: var(--Background-colorOne);
 }
 .Companies .container {
-  color: var(--color1);
+  color: var(--colorOne);
   display: flex;
   gap: 25px;
   padding: 25px;
@@ -347,7 +347,7 @@ header .container nav ul li:hover {
   width: 385px;
 }
 .Companies .container .CompaniesOne h4 {
-  background-color: var(--Background-color2);
+  background-color: var(--Background-colorTwe);
   padding: 20px 10px;
   width: 350px;
 }
@@ -381,7 +381,7 @@ p {
 /* End Companies*/
 /* Start Faq */
 .Faq {
-  background-color: var(--Background-color1);
+  background-color: var(--Background-colorOne);
 }
 .Faq .container {
   color: #fff;
@@ -411,7 +411,7 @@ p {
   transition: 0.6s;
 }
 .Faq .container .TextFaq details summary:hover {
-  background-color: var(--Background-color2);
+  background-color: var(--Background-colorTwe);
   border: none;
 }
 .Faq .container .TextFaq details summary i {
@@ -420,7 +420,7 @@ p {
 /* End Faq */
 /* Start Box */
 .Box {
-  background-color: var(--Background-color1);
+  background-color: var(--Background-colorOne);
 }
 .Box .container {
   display: flex;
@@ -451,7 +451,7 @@ p {
 /* End Box */
 /* Start ContactUs */
 .ContactUs {
-  background-color: var(--Background-color1);
+  background-color: var(--Background-colorOne);
   color: #fff;
   padding: 30px 0;
 }
@@ -491,7 +491,7 @@ textarea {
 }
 .ContactUs .container .ContactUsTwo .button {
   margin: 20px auto;
-  color: var(--Color2);
+  color: var(--colorTwe);
   text-decoration: none;
   border: 2px solid;
   padding: 10px 40px;
@@ -499,16 +499,16 @@ textarea {
   transition: 0.6s;
 }
 .ContactUs .container .ContactUsTwo .button:hover {
-  background-color: var(--Background-color2);
-  color: var(--color1);
-  border: 2px solid var(--Color2);
+  background-color: var(--Background-colorTwe);
+  color: var(--colorOne);
+  border: 2px solid var(--colorTwe);
 }
 .ContactUs .container .ContactUsTwo .Media {
   display: flex;
   gap: 15px;
 }
 .ContactUs .container .ContactUsTwo .Media a {
-  color: var(--Color2);
+  color: var(--colorTwe);
   font-size: 25px;
   transition: 0.6s;
 }
@@ -530,16 +530,16 @@ textarea {
 /* End ContactUs */
 /* Start Footer */
 footer {
-  background-color: var(--Background-color1);
-  border-top: 1px solid var(--color1);
+  background-color: var(--Background-colorOne);
+  border-top: 1px solid var(--colorOne);
 }
 footer .container {
-  color: var(--color1);
+  color: var(--colorOne);
   text-align: center;
   padding: 15px 0;
 }
 footer .container span {
-  color: var(--Color2);
-  /* border-bottom: 1px solid var(--Color2); */
+  color: var(--colorTwe);
+  /* border-bottom: 1px solid var(--colorTwe); */
 }
 /* End Footer */
