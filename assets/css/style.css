@@ -40,7 +40,6 @@ header {
   width: 100%;
   /* position: fixed; */
   position: absolute;
-
   border-bottom: 1px solid #fff;
 }
 header .container {
@@ -83,7 +82,47 @@ header .container nav ul li a {
   display: inline-block;
   padding: 5px;
 }
-header .container nav .list:hover + ul {
+/* start menu-icon */
+.menu-icon {
+  margin: 20px auto;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  position: relative;
+}
+.menu-icon span {
+  background-color: var(--colorOne);
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.menu-icon span:first-child {
+  top: 0;
+}
+.menu-icon span:nth-child(2) {
+  top: 6px;
+}
+.menu-icon span:last-child {
+  top: 12px;
+}
+/**/
+.list span:first-child {
+  opacity: 0;
+}
+.list span:nth-child(2) {
+  top: 6px;
+  background-color: var(--Background-colorTwe);
+  transform: rotate(45deg);
+}
+.list span:last-child {
+  top: 6px;
+  background-color: var(--Background-colorTwe);
+  transform: rotate(-45deg);
+}
+/* end menu-icon */
+header .container nav .show-menu {
   position: absolute;
   top: 101%;
   left: 0;
